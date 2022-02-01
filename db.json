@@ -11,6 +11,30 @@
       "email": "emikeovo@gmail.com",
       "password": "prof@dfp.com",
       "id": 2
+    },
+    {
+      "passord": "222222",
+      "name": "mike",
+      "email": "mike@gmail.com",
+      "id": 3
+    },
+    {
+      "passord": "prof",
+      "name": "mike",
+      "email": "mike@gmail.com",
+      "id": 4
+    },
+    {
+      "passord": "retete",
+      "name": "mike",
+      "email": "ovo1@gmail.com",
+      "id": 5
+    },
+    {
+      "passord": "local@test.pwd",
+      "name": "localstoragetest",
+      "email": "loca;@test.com",
+      "id": 6
     }
   ]
 }
