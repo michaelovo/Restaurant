@@ -40,6 +40,13 @@ export default {
                     this.$router.push({name:'Home'});
                 }
         }
+    },
+    mounted(){
+        //Prevent login user from visiting the signup page
+        let user = localStorage.getItem('signUp-info');
+        if(user){
+            this.$router.push({name:'Home'});
+        }
     }
 }
 </script>

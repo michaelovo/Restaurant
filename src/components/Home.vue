@@ -7,6 +7,13 @@
 <script>
     export default {
         name: 'Home',
+        mounted(){
+            //prevent visiting homepage if not login
+            let user = localStorage.getItem('signUp-info');
+            if(!user) {
+                this.$router.push({name:'SignUp'});
+            }
+        }
     }
 </script>
 
