@@ -1,64 +1,16 @@
 {
   "user": [
     {
-      "name": "Johnson",
-      "email": "ovo@gmail.com",
+      "name": "Michael",
+      "email": "emikeovo@gmail.com",
       "password": "prof@dfp.com",
       "id": 1
     },
     {
-      "name": "Michael",
-      "email": "emikeovo@gmail.com",
-      "password": "prof@dfp.com",
+      "name": "John",
+      "email": "john@gmail.com",
+      "password": "222222",
       "id": 2
-    },
-    {
-      "passord": "222222",
-      "name": "mike",
-      "email": "mike@gmail.com",
-      "id": 3
-    },
-    {
-      "passord": "prof",
-      "name": "mike",
-      "email": "mike@gmail.com",
-      "id": 4
-    },
-    {
-      "passord": "retete",
-      "name": "mike",
-      "email": "ovo1@gmail.com",
-      "id": 5
-    },
-    {
-      "passord": "local@test.pwd",
-      "name": "localstoragetest",
-      "email": "loca;@test.com",
-      "id": 6
-    },
-    {
-      "passord": "router.com",
-      "name": "userrouter",
-      "email": "router@gmail.com",
-      "id": 7
-    },
-    {
-      "passord": "your",
-      "name": "your",
-      "email": "your@gmail.com",
-      "id": 8
-    },
-    {
-      "passord": "",
-      "name": "",
-      "email": "",
-      "id": 9
-    },
-    {
-      "passord": "",
-      "name": "",
-      "email": "",
-      "id": 10
     }
   ]
 }
