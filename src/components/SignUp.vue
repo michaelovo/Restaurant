@@ -35,8 +35,9 @@ export default {
 
                 console.warn(result);
                 if(result.status == 201) {
-                    alert("signup done");
+                   // alert("signup done");
                     localStorage.setItem('signUp-info',JSON.stringify(result.data));//store on the browser for easy access
+                    this.$router.push({name:'Home'});
                 }
         }
     }
