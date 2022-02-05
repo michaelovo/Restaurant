@@ -7,10 +7,11 @@
         <table class="table table-striped" border="1">
             <thead>
                 <tr>
-                <th scope="col">SN</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Address</th>
+                    <th scope="col">SN</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,6 +20,7 @@
                     <td>{{item.name}}</td>
                     <td>{{item.contact}}</td>
                     <td>{{item.address}}</td>
+                    <td style="text-align:center"><router-link :to="'/update/' + item.id">Edit</router-link></td>
                 </tr>
                 
             </tbody>
