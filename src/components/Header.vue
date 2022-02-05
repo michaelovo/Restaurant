@@ -4,12 +4,20 @@
         <a href="">About</a>
         <a href="">Services</a>
         <a href="">Contact Us</a>
+        <a v-on:click="logout" href="#">Logout</a>
     </div>
 </template>
 
 <script>
     export default {
         name: 'Header',
+        methods: {
+            logout(){
+                localStorage.clear();
+                this.$router.push({name:'Login'});
+                //console.warn('logout')
+            }
+        },
     }
 </script>
 
