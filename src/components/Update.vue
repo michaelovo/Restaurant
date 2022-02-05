@@ -1,27 +1,20 @@
 <template>
 <Header/>
     <div>
-        <h2>hello {{user_name}}</h2>
+        <h2>Update resturant</h2>
     </div>
 </template>
 
 <script>
 import Header from './Header.vue';
     export default {
-        name: 'Home',
-        data () {
-            return{
-
-                user_name:'',
-            }
-        },
+        name: 'Update',
         components:{
             Header
         },
         mounted(){
             //prevent visiting homepage if not login
             let user = localStorage.getItem('signUp-info');
-            this.user_name = JSON.parse(user).name;
             if(!user) {
                 this.$router.push({name:'SignUp'});
             }
