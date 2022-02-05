@@ -1,15 +1,36 @@
 {
-    "user": [{
-            "name": "Michael",
-            "email": "emikeovo@gmail.com",
-            "password": "prof@dgp.com",
-            "id": 1
-        },
-        {
-            "name": "John",
-            "email": "john@gmail.com",
-            "password": "222222",
-            "id": 2
-        }
-    ]
+  "user": [
+    {
+      "name": "Michael",
+      "email": "emikeovo@gmail.com",
+      "password": "prof@dgp.com",
+      "id": 1
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "password": "222222",
+      "id": 2
+    }
+  ],
+  "resturants": [
+    {
+      "id": 1,
+      "name": "Mr Biggs",
+      "contact": "08032089623",
+      "address": "23, Oshofisan street"
+    },
+    {
+      "name": "Food Palace",
+      "contact": "070984546",
+      "address": "15, oduduwa street",
+      "id": 3
+    },
+    {
+      "name": "Chicken Republic",
+      "contact": "089243567",
+      "address": "1, Allen Avenue",
+      "id": 4
+    }
+  ]
 }
