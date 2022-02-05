@@ -20,7 +20,10 @@
                     <td>{{item.name}}</td>
                     <td>{{item.contact}}</td>
                     <td>{{item.address}}</td>
-                    <td style="text-align:center"><router-link :to="'/update/' + item.id">Edit</router-link></td>
+                    <td>
+                        <router-link :to="'/update/' + item.id">Edit</router-link><br>
+                        <button  type="button" v-on:click="deleteRestaurant(item.id)">Delete</button>
+                    </td>
                 </tr>
                 
             </tbody>
@@ -43,17 +46,32 @@ import axios from 'axios';
         components:{
             Header
         },
-       async mounted(){
-            //prevent visiting homepage if not login
-            let user = localStorage.getItem('signUp-info');
-            this.user_name = JSON.parse(user).name;
-            if(!user) {
-                this.$router.push({name:'SignUp'});
+         methods: {
+            async deleteRestaurant(id){
+                let result = await axios.delete("http://localhost:3000/resturants/"+id);
+
+                if(result.status == 200){
+                    //delete and auto-load data function call
+                    this.loadData();
+                }
+            },
+            
+            async loadData(){
+                //prevent visiting homepage if not login
+                let user = localStorage.getItem('signUp-info');
+                this.user_name = JSON.parse(user).name;
+                if(!user) {
+                    this.$router.push({name:'SignUp'});
+                }
+
+                let result = await axios.get("http://localhost:3000/resturants");
+                this.resturants = result.data;
+                //console.warn(result);
             }
 
-            let result = await axios.get("http://localhost:3000/resturants");
-            this.resturants = result.data;
-            //console.warn(result);
+        },
+       async mounted(){
+            this.loadData();
         }
     }
 </script>

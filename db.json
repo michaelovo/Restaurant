@@ -15,34 +15,10 @@
   ],
   "resturants": [
     {
-      "id": 1,
-      "name": "Mr Biggs",
-      "contact": "08032089623",
-      "address": "23, Oshofisan street"
-    },
-    {
-      "name": "Food Palace",
-      "contact": "070984546",
-      "address": "15, oduduwa street",
-      "id": 3
-    },
-    {
-      "name": "Chicken Republic",
-      "contact": "089243567",
-      "address": "21, Allen Avenue",
-      "id": 4
-    },
-    {
-      "name": "Tantalizers and sauce",
-      "contact": "0812678345",
-      "address": "11, toussou street, Ikate",
-      "id": 5
-    },
-    {
       "name": "KFC",
-      "contact": "0819087256",
-      "address": "54, Toto-oba Great estate, 2nd avenue, bagida, ikorodu, lagos",
-      "id": 6
+      "contact": "089243567",
+      "address": "23, Allen Avenue",
+      "id": 1
     }
   ]
 }
