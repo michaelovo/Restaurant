@@ -22,9 +22,9 @@
                     <td>{{item.address}}</td>
                     <td>
                         <router-link :to="'/update/' + item.id">
-                            <a class="btn btn-primary">Edit</a>
+                            <a class="btn btn-primary" title="Edit"><fa :icon="['fas','pen']"/></a>
                         </router-link>
-                        <button  type="button" class="btn btn-danger" v-on:click="deleteRestaurant(item.id)">Delete</button>
+                        <button  type="button" class="btn btn-danger" v-on:click="deleteRestaurant(item.id)"><fa icon="trash" title="Delete"/></button>
                     </td>
                 </tr>
                 
