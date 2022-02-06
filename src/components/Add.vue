@@ -6,11 +6,11 @@
     <div class="add">
         <form>
            
-            <input type="text" name="name" v-model="resturant.name" placeholder="Enter Restaurant name">
-            <input type="text" name="address" v-model="resturant.address" placeholder="Enter Restaurant Address">
-            <input type="text" name="contact" v-model="resturant.contact" placeholder="Enter Restaurant Contact number">
+            <input type="text" class="form-control" name="name" v-model="resturant.name" placeholder="Enter Restaurant name">
+            <input type="text" class="form-control" name="address" v-model="resturant.address" placeholder="Enter Restaurant Address">
+            <input type="text" class="form-control" name="contact" v-model="resturant.contact" placeholder="Enter Restaurant Contact number">
           
-            <button type="button" :onclick="addRestaurant" class="add">Add</button>
+            <button type="button" :onclick="addRestaurant" class="btn btn-success">Add</button>
         </form>
     </div>
 </template>

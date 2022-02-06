@@ -3,15 +3,15 @@
     <div>
         <h2>hello {{user_name}}</h2>
     </div>
-    <div>
-        <table class="table table-striped" border="1">
+    <div class="center">
+        <table id="example" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
-                    <th scope="col">SN</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Action</th>
+                    <th>SN</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,8 +21,10 @@
                     <td>{{item.contact}}</td>
                     <td>{{item.address}}</td>
                     <td>
-                        <router-link :to="'/update/' + item.id">Edit</router-link><br>
-                        <button  type="button" v-on:click="deleteRestaurant(item.id)">Delete</button>
+                        <router-link :to="'/update/' + item.id">
+                            <a class="btn btn-primary">Edit</a>
+                        </router-link>
+                        <button  type="button" class="btn btn-danger" v-on:click="deleteRestaurant(item.id)">Delete</button>
                     </td>
                 </tr>
                 
@@ -77,9 +79,9 @@ import axios from 'axios';
 </script>
 
 <style>
-    td{
+    /* td{
         width: 160px;
         height: 14px;
         text-align: left;
-    }
+    } */
 </style>

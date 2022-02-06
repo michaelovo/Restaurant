@@ -19,6 +19,18 @@
       "contact": "089243567",
       "address": "23, Allen Avenue",
       "id": 1
+    },
+    {
+      "name": "Mr Biggs",
+      "contact": "089243567",
+      "address": "2, Allen Avenue",
+      "id": 2
+    },
+    {
+      "name": "Chicken Republic",
+      "contact": "089243567",
+      "address": "2, Opebi Avenue",
+      "id": 3
     }
   ]
 }

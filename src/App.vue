@@ -39,8 +39,13 @@ body {
     width: 320px;
     height: 40px;
     border: 1px solid skyblue;
-    background-color:skyblue;
+    /* background-color:skyblue; */
     color: white;
     cursor: pointer;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
 </style>
